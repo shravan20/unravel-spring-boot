@@ -13,8 +13,8 @@ It is a Spring module that provides the RAD (Rapid Application Development) feat
 ```
 @----------@        @----------@        @--------------@        @----------@
 |          |        |Embedded  |        |XML<bean>     |        |          |
-|Spring    |   +    |HTTP      |   -    |Configuration/|    =   |  Spring  |
-|Framework |        |Servers   |        |@Configuration|        |   Boot   |
+|Spring    |   +    |  HTTP    |   -    |Configuration/|    =   |  Spring  |
+| Framework|        |   Servers|        |@Configuration|        |   Boot   |
 @----------@        @----------@        @--------------@        @----------@        
 
 ```
@@ -74,3 +74,29 @@ Along with the Spring Boot Framework, many other Spring sister projects help to 
 - Type-safe Configuration
 - Logging
 - Security
+
+## What's up with Spring Boot 2.0?
+
+- What's New
+  - Infrastructure Upgrade
+  - Spring Framework 5
+- What's Changed
+  - Configuration Properties
+  - Gradle Plugin
+  - Actuators endpoints
+- What's Evolving
+  - Security
+  - Metrics
+
+## Performance Improvements
+
+In Spring Boot 2.2.1 the following performance has been improved:
+
+- **Lazy Initialization**: In Spring Boot 2.2.1, we can enable global lazy initialization by using the property spring.main.lazy-initialization property. It reduces the application startup time.
+
+- **Java 13 Support**: Spring Boot 2.2.1 now supports the latest version of Java that is Java 13.
+
+- **Immutable Binding**: In the newer version of Spring Boot, Configuration properties support constructor-based binding. The class annotates with @ConfigurationProperties annotation is to be immutable. It can be enabled by adding an annotation @ConfugurationProperties to a class or one of its constructors with @ConstructorBinding. 
+
+- **RSocket Support**: It is a part of Spring Security. RSocket integration is auto-configured when an application finds spring-security-rsocket is present on the classpath.
+
