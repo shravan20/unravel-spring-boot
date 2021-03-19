@@ -99,4 +99,3 @@ In Spring Boot 2.2.1 the following performance has been improved:
 - **Immutable Binding**: In the newer version of Spring Boot, Configuration properties support constructor-based binding. The class annotates with @ConfigurationProperties annotation is to be immutable. It can be enabled by adding an annotation @ConfugurationProperties to a class or one of its constructors with @ConstructorBinding. 
 
 - **RSocket Support**: It is a part of Spring Security. RSocket integration is auto-configured when an application finds spring-security-rsocket is present on the classpath.
-
