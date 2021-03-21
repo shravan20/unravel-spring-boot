@@ -4,6 +4,8 @@
 
 Spring Boot is a Spring module that provides the RAD (Rapid Application Development) feature to the Spring framework.
 
+Spring Boot is an opinionated, convention-over-configuration focused addition to the Spring platform – highly useful to get started with minimum effort and create stand-alone, production-grade applications.
+
 ## What is Spring Boot?
 
 Spring Boot is a project that is built on the top of the Spring Framework. It provides an easier and faster way to set up, configure, and run both simple and web-based applications.
