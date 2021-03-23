@@ -79,14 +79,14 @@ Along with the Spring Boot Framework, many other Spring sister projects help to 
 
 ## What's up with Spring Boot 2.0?
 
-- What's New
+- **What's New**
   - Infrastructure Upgrade
   - Spring Framework 5
-- What's Changed
+- **What's Changed**
   - Configuration Properties
   - Gradle Plugin
   - Actuators endpoints
-- What's Evolving
+- **What's Evolving**
   - Security
   - Metrics
 
