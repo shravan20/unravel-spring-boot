@@ -62,7 +62,7 @@ public class UserController {
         set.add("Five");
         set.add("Four");
         set.add("Five");
-        Iterator<String> i=set.iterator();
+        Iterator<String> i = set.iterator();
         while(i.hasNext())
         {
             System.out.println(i.next());
