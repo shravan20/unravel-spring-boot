@@ -5,9 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 @RestController
 
@@ -49,6 +47,28 @@ public class UserController {
         list.add("Apple");
         list.add("Banana");
         list.add("Grapes");
+        System.out.println(list);
         return list;
     }
+
+    @GetMapping("/HashSet")
+    public HashSet hashset() {
+        //Creating HashSet and adding elements
+        HashSet<String> set=new HashSet();
+        set.add("One");
+        set.add("Two");
+        set.add("Three");
+        set.add("Four");
+        set.add("Five");
+        set.add("Four");
+        set.add("Five");
+        Iterator<String> i=set.iterator();
+        while(i.hasNext())
+        {
+            System.out.println(i.next());
+        }
+        System.out.println(set);
+        return set;
+    }
+
 }
