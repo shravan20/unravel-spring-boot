@@ -12,7 +12,7 @@ public class Controller {
     @GetMapping("/status")
     public HashMap<String,Boolean> statusCheck(){
         HashMap<String, Boolean> status = new HashMap<String, Boolean>();
-        status.put("Hello", true);
+        status.put("statusCheck", true);
         return status;
     }
 
