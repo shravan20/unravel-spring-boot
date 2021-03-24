@@ -86,4 +86,14 @@ public class UserController {
         }
         return set;
     }
+
+    @GetMapping("/HashMap")
+    public HashMap hashmap() {
+        HashMap<Integer,String> map=new HashMap<Integer,String>();//Creating HashMap
+        map.put(1,"Mango");  //Put elements in Map
+        map.put(2,"Apple");
+        map.put(3,"Banana");
+        map.put(4,"Grapes");
+        return map;
+    }
 }
