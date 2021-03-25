@@ -101,3 +101,20 @@ In Spring Boot 2.2.1 the following performance has been improved:
 - **Immutable Binding**: In the newer version of Spring Boot, Configuration properties support constructor-based binding. The class annotates with @ConfigurationProperties annotation is to be immutable. It can be enabled by adding an annotation @ConfugurationProperties to a class or one of its constructors with @ConstructorBinding. 
 
 - **RSocket Support**: It is a part of Spring Security. RSocket integration is auto-configured when an application finds spring-security-rsocket is present on the classpath.
+
+## Spring Boot v/s Spring
+
+- **Spring**: Spring Framework is the most popular application development framework of Java. The main feature of the Spring Framework is dependency Injection or Inversion of Control (IoC). With the help of Spring Framework, we can develop a loosely coupled application. It is better to use if application type or characteristics are purely defined.
+- **Spring Boot**: Spring Boot is a module of Spring Framework. It allows us to build a stand-alone application with minimal or zero configurations. It is better to use if we want to develop a simple Spring-based application or RESTful services.
+
+## Spring Boot Architecture
+
+![Architecture](https://static.javatpoint.com/springboot/images/spring-boot-architecture2.png)
+
+- Now we have validator classes, view classes, and utility classes.
+- Spring Boot uses all the modules of Spring-like Spring MVC, Spring Data, etc. The architecture of Spring Boot is the same as the architecture of Spring MVC, except one thing: there is no need for DAO and DAOImpl classes in Spring boot.
+- Creates a data access layer and performs CRUD operation.
+- The client makes the HTTP requests (PUT or GET).
+- The request goes to the controller, and the controller maps that request and handles it. After that, it calls the service logic if required.
+- In the service layer, all the business logic performs. It performs the logic on the data that is mapped to JPA with model classes.
+- A JSP page is returned to the user if no error occurred.
