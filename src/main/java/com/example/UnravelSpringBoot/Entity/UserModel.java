@@ -1,11 +1,10 @@
-package com.example.UnravelSpringBoot.UserEntity;
+package com.example.UnravelSpringBoot.Entity;
 
 
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import javax.persistence.*;
-import lombok.Generated;
 
 @Getter
 @Setter
@@ -19,6 +18,8 @@ public class UserModel {
     private int id;
 
     private String name;
+
+    @Column(unique = true)
     private String email;
 
 

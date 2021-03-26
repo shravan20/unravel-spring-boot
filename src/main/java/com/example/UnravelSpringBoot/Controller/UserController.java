@@ -1,7 +1,7 @@
-package com.example.UnravelSpringBoot.UserController;
+package com.example.UnravelSpringBoot.Controller;
 
-import com.example.UnravelSpringBoot.UserEntity.UserModel;
-import com.example.UnravelSpringBoot.UserService.UserService;
+import com.example.UnravelSpringBoot.Entity.UserModel;
+import com.example.UnravelSpringBoot.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +28,15 @@ public class UserController {
 
     @GetMapping("/user")
     public List<UserModel> getAllUsers(){
+
         return userService.getAllUsers();
     }
+
+    /*
+    @GetMapping(value = "/user/{userId}")
+    public UserModel getUser(@PathVariable int userId){
+        return userService.getUser(userId);
+    }*/
+
 
 }

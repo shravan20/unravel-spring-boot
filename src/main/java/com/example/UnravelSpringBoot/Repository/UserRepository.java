@@ -1,6 +1,6 @@
-package com.example.UnravelSpringBoot.UserRepository;
+package com.example.UnravelSpringBoot.Repository;
 
-import com.example.UnravelSpringBoot.UserEntity.UserModel;
+import com.example.UnravelSpringBoot.Entity.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

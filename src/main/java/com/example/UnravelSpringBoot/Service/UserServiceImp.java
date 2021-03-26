@@ -1,10 +1,9 @@
-package com.example.UnravelSpringBoot.UserService;
+package com.example.UnravelSpringBoot.Service;
 
-import com.example.UnravelSpringBoot.UserEntity.UserModel;
-import com.example.UnravelSpringBoot.UserRepository.UserRepository;
+import com.example.UnravelSpringBoot.Entity.UserModel;
+import com.example.UnravelSpringBoot.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
@@ -15,6 +14,7 @@ public class UserServiceImp implements UserService {
 
     @Override
     public UserModel addNewUser(UserModel user) {
+        System.out.print("User:"+user);
         return UserRepo.save(user);
     }
 
@@ -22,5 +22,12 @@ public class UserServiceImp implements UserService {
     public List<UserModel> getAllUsers() {
         return UserRepo.findAll();
     }
+
+    /*
+    @Override
+    public UserModel getUser(int userId){
+        return UserRepo.findOne(userId);
+    }
+    */
 
 }
