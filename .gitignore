@@ -38,3 +38,6 @@ out/
 
 ### Application - Properties ###
 /src/main/resources/
+
+### Custom ###
+/src/main/java/com/example/UnravelSpringBoot/UserController/Controller.java
