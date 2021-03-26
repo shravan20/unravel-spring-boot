@@ -3,6 +3,8 @@ package com.example.UnravelSpringBoot.Controller;
 import com.example.UnravelSpringBoot.Entity.UserModel;
 import com.example.UnravelSpringBoot.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -22,14 +24,13 @@ public class UserController {
     }
 
     @PostMapping("/user")
-    public UserModel createUser(@RequestBody UserModel user){
-        return userService.addNewUser(user);
+    public ResponseEntity createUser(@RequestBody UserModel user){
+        return new ResponseEntity<>(userService.addNewUser(user), HttpStatus.CREATED);
     }
 
     @GetMapping("/user")
-    public List<UserModel> getAllUsers(){
-
-        return userService.getAllUsers();
+    public ResponseEntity getAllUsers(){
+        return new ResponseEntity<>(userService.getAllUsers(), HttpStatus.OK);
     }
 
     /*
