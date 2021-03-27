@@ -5,6 +5,7 @@ import com.example.UnravelSpringBoot.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserServiceImp implements UserService {
@@ -23,11 +24,15 @@ public class UserServiceImp implements UserService {
         return UserRepo.findAll();
     }
 
-    /*
+
     @Override
-    public UserModel getUser(int userId){
-        return UserRepo.findOne(userId);
+    public UserModel getUser(int userId) {
+        Optional<UserModel> data = UserRepo.findById(userId);
+        if(data.isPresent())
+            return data.get();
+        else
+            return null;
+
     }
-    */
 
 }

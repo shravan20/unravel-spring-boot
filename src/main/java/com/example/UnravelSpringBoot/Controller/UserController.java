@@ -33,11 +33,10 @@ public class UserController {
         return new ResponseEntity<>(userService.getAllUsers(), HttpStatus.OK);
     }
 
-    /*
     @GetMapping(value = "/user/{userId}")
     public UserModel getUser(@PathVariable int userId){
         return userService.getUser(userId);
-    }*/
+    }
 
 
 }

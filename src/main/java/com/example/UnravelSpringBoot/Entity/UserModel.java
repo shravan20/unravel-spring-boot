@@ -22,6 +22,4 @@ public class UserModel {
     @Column(unique = true)
     private String email;
 
-
-
 }

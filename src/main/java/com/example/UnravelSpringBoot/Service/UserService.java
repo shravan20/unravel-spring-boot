@@ -7,5 +7,5 @@ import java.util.Optional;
 public interface UserService {
     public UserModel addNewUser(UserModel user);
     public List<UserModel> getAllUsers();
-    //\public UserModel getUser(int userId);
+    public UserModel getUser(int userId);
 }
