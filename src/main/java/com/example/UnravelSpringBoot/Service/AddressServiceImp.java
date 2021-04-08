@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @Service
@@ -16,6 +17,7 @@ public class AddressServiceImp implements AddressService {
 
     @Override
     public AddressModel addAddress(AddressModel address) {
+        System.out.println("Address Data:"+address);
         return addressRepository.save(address);
     }
 

@@ -18,6 +18,7 @@ public class AddressController {
 
     @PostMapping
     public ResponseEntity addAddress(@RequestBody AddressModel address){
+        System.out.println(address);
         return  new ResponseEntity<>(addressService.addAddress(address), HttpStatus.CREATED);
     }
 
