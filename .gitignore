@@ -40,4 +40,4 @@ out/
 /src/main/resources/
 
 ### Custom ###
-/src/main/java/com/example/UnravelSpringBoot/UserController/Controller.java
+/src/main/java/com/example/UnravelSpringBoot/Controller/Controller.java
