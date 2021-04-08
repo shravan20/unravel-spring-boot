@@ -5,13 +5,15 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 import javax.persistence.*;
+import java.io.Serializable;
+import java.util.Set;
 
 @Getter
 @Setter
 @Entity
 @Table(name="UserInfo")
 @ToString
-public class UserModel {
+public class UserModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,5 +23,8 @@ public class UserModel {
 
     @Column(unique = true)
     private String email;
+
+    @OneToMany(mappedBy = "user", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<AddressModel> addresses;
 
 }
